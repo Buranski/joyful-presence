@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joyful Presence with Joy Rika Miyatake — embodied wisdom, yoga therapy, and transformational experiences to help you come home to yourself.">
+  <meta name="theme-color" content="#123f3c">
+  <title>Joyful Presence | Joy Rika Miyatake</title>
+  <style>
+    :root{--forest:#123f3c;--teal:#1f6862;--sage:#a8bca8;--cream:#f8f2e8;--paper:#fffaf2;--gold:#d39a4a;--burgundy:#7d2945;--ink:#273d3a;--muted:#6a7974}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+    a{color:inherit}
+    h1,h2,h3,.brand{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.08;margin:0}
+    .shell{width:min(1160px,calc(100% - 40px));margin:auto}
+    .eyebrow{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+    .nav{position:absolute;z-index:4;width:100%;padding:24px 0;color:#fff}
+    .nav .shell{display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:1.4rem;letter-spacing:.04em;text-decoration:none}
+    .navlinks{display:flex;gap:26px;align-items:center}
+    .navlinks a{text-decoration:none;font-size:.86rem;letter-spacing:.09em;text-transform:uppercase}
+    .hero{min-height:760px;display:grid;align-items:center;position:relative;color:#fff;background:linear-gradient(90deg,rgba(9,45,42,.93) 0%,rgba(13,55,52,.75) 46%,rgba(13,55,52,.13) 74%),url('assets/joy-rika-miyatake.jpg') 76% 35%/cover no-repeat}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--cream))}
+    .hero-copy{position:relative;z-index:2;max-width:610px;padding-top:60px}
+    h1{font-size:clamp(4rem,8vw,7.4rem);letter-spacing:-.05em;margin:14px 0 24px}
+    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);max-width:520px;color:rgba(255,255,255,.88);margin:0 0 34px}
+    .button{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:#173b38;text-decoration:none;padding:15px 24px;border-radius:999px;font-size:.82rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;box-shadow:0 12px 30px rgba(0,0,0,.16);transition:.2s transform,.2s background}
+    .button:hover{transform:translateY(-2px);background:#e1ab5d}
+    .button.outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);box-shadow:none;margin-left:10px}
+    .button.outline:hover{background:rgba(255,255,255,.1)}
+    .intro{padding:105px 0 90px;text-align:center;position:relative}
+    .sun{width:66px;height:66px;margin:0 auto 24px;color:var(--gold)}
+    h2{font-size:clamp(2.5rem,5vw,4.7rem);color:var(--forest);letter-spacing:-.035em}
+    .intro p{max-width:770px;margin:26px auto 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.16rem,2.2vw,1.45rem);line-height:1.75;color:#51645f}
+    .about{padding:100px 0;background:var(--paper)}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
+    .portrait{position:relative}
+    .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 18px 18px;display:block;box-shadow:24px 24px 0 #d9e1d4}
+    .portrait:before{content:"";position:absolute;width:115px;height:115px;border:1px solid var(--gold);border-radius:50%;left:-34px;top:13%;z-index:2}
+    .about h2{margin:14px 0 28px}
+    .about p{color:#53635f;margin:0 0 18px}
+    .signature{font:italic 1.55rem Georgia,serif;color:var(--teal);margin-top:28px}
+    .offerings{padding:110px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 58px}
+    .section-head h2{margin-top:12px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{position:relative;background:var(--paper);padding:43px 34px 38px;border-radius:160px 160px 20px 20px;text-align:center;box-shadow:0 14px 44px rgba(24,63,58,.08);border:1px solid rgba(31,104,98,.09)}
+    .card .num{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 24px;border:1px solid var(--gold);border-radius:50%;font:1rem Georgia,serif;color:var(--gold)}
+    .card h3{font-size:1.75rem;color:var(--forest);margin-bottom:16px}
+    .card p{font-size:.96rem;color:var(--muted);margin:0}
+    .gift-cta-slot{height:0;position:relative;z-index:5;text-align:center}
+    .gift-button{display:inline-flex;align-items:center;justify-content:center;min-width:min(520px,calc(100vw - 40px));padding:20px 34px;border:1px solid rgba(255,250,242,.55);border-radius:999px;background:var(--burgundy);color:#fffaf2;text-decoration:none;font-size:clamp(.84rem,1.8vw,1rem);font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 16px 40px rgba(59,18,34,.28);transform:translateY(-50%);transition:.2s transform,.2s background,.2s box-shadow}
+    .gift-button:hover{background:#963653;transform:translateY(calc(-50% - 3px));box-shadow:0 20px 46px rgba(59,18,34,.34)}
+    .gift-cta-slot[hidden]{display:none}
+    .values{background:var(--forest);color:#fff;padding:105px 0;overflow:hidden;position:relative}
+    .values:before{content:"";position:absolute;inset:-50% auto auto -12%;width:500px;height:500px;border:1px solid rgba(211,154,74,.25);border-radius:50%;box-shadow:0 0 0 70px rgba(211,154,74,.04),0 0 0 140px rgba(211,154,74,.035)}
+    .values-grid{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;align-items:start}
+    .values h2{color:#fff;margin-top:12px}
+    .value-list{display:grid;grid-template-columns:1fr 1fr;gap:34px 44px}
+    .value h3{font-size:1.25rem;color:#f4ce91;margin-bottom:8px}
+    .value p{margin:0;color:rgba(255,255,255,.7);font-size:.94rem}
+    .quote{padding:115px 0;text-align:center;background:#e8eee6}
+    blockquote{max-width:850px;margin:0 auto;font:italic clamp(1.65rem,3.5vw,2.7rem)/1.5 Georgia,serif;color:var(--forest)}
+    .quote cite{display:block;margin-top:25px;font:700 .75rem ui-sans-serif,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+    .cta{padding:115px 0;text-align:center;background:radial-gradient(circle at 50% 0,#fffaf1 0,transparent 44%),var(--cream)}
+    .cta h2{max-width:800px;margin:12px auto 24px}
+    .cta p{max-width:620px;margin:0 auto 32px;color:var(--muted)}
+    footer{background:#0e322f;color:rgba(255,255,255,.72);padding:34px 0}
+    footer .shell{display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:.88rem}
+    footer a{color:#f0c785;text-decoration:none}
+    @media(max-width:800px){.navlinks a:not(.button){display:none}.hero{min-height:700px;background-position:65% 35%}.hero:before{content:"";position:absolute;inset:0;background:rgba(7,39,36,.3)}.hero-copy{padding-top:120px}.button.outline{display:none}.about-grid,.values-grid{grid-template-columns:1fr;gap:55px}.portrait{max-width:460px;margin:auto}.cards{grid-template-columns:1fr}.card{max-width:520px;margin:auto;width:100%}.value-list{grid-template-columns:1fr}.about,.offerings,.values,.quote,.cta{padding:80px 0}footer .shell{flex-direction:column;text-align:center}}
+    @media(max-width:480px){.shell{width:min(100% - 28px,1160px)}h1{font-size:3.65rem}.hero{min-height:680px}.nav .button{padding:11px 16px;font-size:.7rem}.brand{font-size:1.2rem}.gift-button{min-width:calc(100vw - 28px);padding:18px 20px;letter-spacing:.07em}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="shell"><a class="brand" href="#top">Joyful Presence</a><div class="navlinks"><a href="#about">Meet Joy</a><a href="#offerings">The Work</a><a class="button" href="https://joyfulpresence.hbportal.co/schedule/6a0bbcf0b626029a059dd93f" target="_blank" rel="noopener">Book with Joy</a></div></div></nav>
+  <header class="hero" id="top"><div class="shell"><div class="hero-copy"><span class="eyebrow">Embodied wisdom · Authentic joy</span><h1>Clarity you<br>can feel</h1><p>Personalized yoga therapy and transformative experiences that quiet the mind, awaken the body’s wisdom, and reconnect you with your most joyful presence.</p><a class="button" href="https://joyfulpresence.hbportal.co/schedule/6a0bbcf0b626029a059dd93f" target="_blank" rel="noopener">Book a session <span>→</span></a><a class="button outline" href="#about">Meet Joy</a></div></div></header>
+  <main>
+    <section class="intro"><div class="shell"><svg class="sun" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="12" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2"><path d="M40 2v19M40 59v19M2 40h19M59 40h19M13 13l14 14M53 53l14 14M67 13 53 27M27 53 13 67"/></g></svg><span class="eyebrow">Joyful Presence</span><h2>Where embodied wisdom<br>awakens authentic joy.</h2><p>This is an invitation to soften the noise, listen inward, and remember the clarity and power already living within you. Ancient practices meet modern understanding in a compassionate space designed for real, lasting transformation.</p></div></section>
+    <section class="about" id="about"><div class="shell about-grid"><div class="portrait"><img src="assets/joy-rika-miyatake.jpg" alt="Joy Rika Miyatake"></div><div><span class="eyebrow">Your guide</span><h2>Meet Joy Rika Miyatake</h2><p>Joy has been practicing yoga since 2002 and teaching since 2008. A certified Yoga Therapist, her work is rooted in a simple truth: yoga is more than poses—it is lifestyle alignment.</p><p>Her studies at Hampshire College and the University of Hawaiʻi explored Eastern spirituality through the lens of Western psychology. Today, she applies that wisdom to modern life, with a special focus on releasing trauma from the body through movement.</p><p>Joy has served adaptive sports communities, veterans with PTSD, and Cambodian genocide survivors, helping release the generational effects of war and displacement. Her approach is deeply personal, intuitive, and always centered on what each client truly needs.</p><div class="signature">With presence, Joy</div></div></div></section>
+    <section class="offerings" id="offerings"><div class="shell"><div class="section-head"><span class="eyebrow">Ways to work together</span><h2>A path shaped around you.</h2></div><div class="cards"><article class="card"><div class="num">01</div><h3>Yoga Therapy</h3><p>Virtual one-to-one sessions tailored to your body, mind, emotions, and lived experience—not a one-size-fits-all method.</p></article><article class="card"><div class="num">02</div><h3>Embodied Presence</h3><p>Gentle, effective practices that move you out of overthinking and into the steady intelligence of your own body.</p></article><article class="card"><div class="num">03</div><h3>Transformative Journeys</h3><p>Immersive workshops and retreats that create room for connection, courageous authenticity, and joyful surrender.</p></article></div></div></section>
+    <div class="gift-cta-slot" data-complimentary-gift><a class="gift-button" href="https://joyfulpresence.hbportal.co/public/6aee034062212eca4878c7e8/1-Nice_to_meet_you" target="_blank" rel="noopener">Claim Your Complimentary Gift</a></div>
+    <section class="values"><div class="shell values-grid"><div><span class="eyebrow">The heart of the work</span><h2>Presence is where transformation begins.</h2></div><div class="value-list"><div class="value"><h3>Embodied Wisdom</h3><p>The body holds intelligence that the thinking mind cannot access alone.</p></div><div class="value"><h3>Authentic Presence</h3><p>Change unfolds when we stop performing and fully inhabit the moment.</p></div><div class="value"><h3>Joyful Surrender</h3><p>Joy becomes available when we release resistance and soften into who we are.</p></div><div class="value"><h3>Compassionate Growth</h3><p>Transformation does not require harshness; it can unfold with tenderness.</p></div></div></div></section>
+    <section class="quote"><div class="shell"><blockquote>“Joy’s one-to-one work is perfectly tailored to not only your body, but your mind and emotions. You leave feeling encouraged, your mind quieter, with a whole variety of tools to draw upon as life happens.”</blockquote><cite>— A Joyful Presence client</cite></div></section>
+    <section class="cta"><div class="shell"><span class="eyebrow">Begin here</span><h2>Ready to return to your own inner knowing?</h2><p>Schedule time with Joy to explore what support can look like for you.</p><a class="button" href="https://joyfulpresence.hbportal.co/schedule/6a0bbcf0b626029a059dd93f" target="_blank" rel="noopener">Book with Joy <span>→</span></a></div></section>
+  </main>
+  <footer><div class="shell"><div>© 2026 Joyful Presence · Joy Rika Miyatake</div><div><a href="mailto:joyrika@gmail.com">joyrika@gmail.com</a></div></div></footer>
+  <script src="site-config.js"></script>
+  <script>
+    const giftConfig = window.JOYFUL_PRESENCE_CONFIG?.complimentaryGift;
+    const giftSlot = document.querySelector('[data-complimentary-gift]');
+    giftSlot.hidden = giftConfig?.enabled === false;
+    if (giftConfig?.label) giftSlot.querySelector('a').textContent = giftConfig.label;
+    if (giftConfig?.url) giftSlot.querySelector('a').href = giftConfig.url;
+  </script>
+</body>
+</html>
